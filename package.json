@@ -1,0 +1,20 @@
+{
+  "name": "@shitcloud/micro",
+  "version": "0.1.0",
+  "description": "",
+  "main": "src/index.js",
+  "bin": {
+    "micro": "./src/repl.js"
+  },
+  "keywords": [],
+  "author": "Henrik Næss <henrik@heka.no>",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^7.24.0"
+  },
+  "dependencies": {
+    "amqplib": "^0.7.1",
+    "debug": "^4.3.1",
+    "uuid": "^8.3.2"
+  }
+}
