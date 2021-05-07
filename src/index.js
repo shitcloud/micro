@@ -52,7 +52,7 @@ class Micro {
 		await this.connect();
 		debug('subscribing to %s', topic);
 
-		const queue = await this.channel.assertQueue(`queue.${this.name}`, { durable: false, autoDelete: true });
+		const queue = await this.channel.assertQueue(`queue.${this.name}.${topic}`, { durable: false, autoDelete: true });
 		
 		await this.channel.bindQueue(queue.queue, 'pubsub', topic);
 
